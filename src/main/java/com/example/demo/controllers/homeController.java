@@ -11,4 +11,5 @@ public class homeController {
         model.addAttribute("title","Домашняя страница.");
         return  "home";
     }
+
 }
