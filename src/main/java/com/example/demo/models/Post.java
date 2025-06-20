@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 @Entity
 public class Post {
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    @GeneratedValue(strategy = GenerationType.AUTO)// Генерация Id автоматическая
     private long id;
 
     private String title, anons, fullText;
