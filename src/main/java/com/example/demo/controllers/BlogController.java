@@ -18,8 +18,7 @@ public class BlogController {
         return "blog-main";
     }
     @GetMapping("/blog/add")
-    public String home(Model model){
-        model.addAttribute("title","Домашняя страница.");
+    public String blogAdd(Model model){
         return  "blog-add";
     }
 }
