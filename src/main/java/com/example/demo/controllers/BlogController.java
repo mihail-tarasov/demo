@@ -31,12 +31,12 @@ public class BlogController {
     public String blogPostAdd(@RequestParam String title,@RequestParam String anons,@RequestParam String fullText, Model model){
         Post post=new Post(title,anons,fullText);
         postRepository.save(post);
-        return "redirect:/blog";
+        return "redirect:/blog-main";
     }
     @GetMapping("/blog/{id}")
     public String blogDetails(@PathVariable(value="id")long id,Model model){
         if(!postRepository.existsById(id)){
-            return "redirect:/blog-main";
+            return "/blog-main";
         }
         Optional<Post>post=postRepository.findById(id);
         ArrayList<Post> res=new ArrayList<>();
