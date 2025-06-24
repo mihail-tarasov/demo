@@ -15,7 +15,9 @@
         <p th:text="${el.views}"></p>
 
         <a th:href="'/blog/' + ${el.id}">Редактирование</a>
-        <a th:href="'/blog/' + ${el.id}">Удаление</a>
+        <form th:action="'/blog/' + ${el.id} +'/remove'" method="post">
+        <button class="btn btn-warning" type="submit">Удалить</button>
+        </form>
     </biv>
 </div>
 </body>
