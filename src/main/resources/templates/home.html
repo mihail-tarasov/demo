@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title th:text="${title}"></title>
+</head>
+<BODY>
+    <H1><FONT SIZE="–2" FACE="ARIAL" COLOR="GREEN">Теперь ты свободен!</FONT></h1>
+    <p1><FONT SIZE="–2" FACE="ARIAL" COLOR="BLUE">Можно лежать на диване в машине!</FONT></p1>
+    <img src="/images/SleepInCar.jpg"style="max-width:100%; height:auto;" ALIGN="TOP">
+    <hr>
+    <p1><FONT SIZE="–2" FACE="ARIAL" COLOR="BLUE">А можно лежать под машиной</FONT></p1>
+    <img src="/images/UnderCar.jpg"style="max-width:100%; height:auto;" ALIGN="TOP">
+    <hr>
+    <p1><FONT SIZE="–2" FACE="ARIAL" COLOR="GREEN">А можно лежать в снегу в 36 градусов мороза!)</FONT></p1>
+    <img src="images/Snow.jpg"style="max-width:100%; height:auto;" ALIGN="TOP">
+    <hr>
+    <p1><FONT SIZE="–2" FACE="ARIAL" COLOR="GREEN">А можно просто собирать грибы, ловить рыбу и отдыхать на природе!)</FONT></p1>
+    <img src="images/Forest.jpg"style="max-width:100%; height:auto;" ALIGN="TOP">
+    <hr>
+    <a HREF="images/About.htm">Если хочешь узнать как приобрести жми сюда!</a>
+<div th:insert="bloks/footer :: footer"></div>
+</BODY>

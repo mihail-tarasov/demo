@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <title th:text="${title}"></title>
+</head>
+<body>
+<p th:text="'Привет! ' + ${title}+ '!'"/>
+<a HREF="Main.htm">Смотреть работу.</a>
+<div th:insert="bloks/footer :: footer"></div>
+</BODY>
+</HTML>
+</body>
+</html>
