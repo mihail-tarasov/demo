@@ -1,5 +1,16 @@
 package com.example.demo;
 
+import static
+        org.hamcrest.Matchers.containsString;
+import static
+        org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
+import static
+        org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
+import static
+        org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
+import static
+        org.springframework.test.web.servlet.result.MockMvcResultMatchers.view;
+
 import com.example.demo.controllers.homeController;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -15,6 +26,6 @@ public class homeControllerTest {
         mockMvc.perform(get("/home"))
                 .andExpect(status().isOk())
                 .andExpect(view().name("home"))
-                .andExpect(content().string(containString("Домашняя страница.")));
+                .andExpect(content().string(containsString("Привет ты на домашней странице ")));
     }
 }
